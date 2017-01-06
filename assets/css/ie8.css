@@ -1,32 +1,55 @@
 /*
-	Solid State by HTML5 UP
+	Highlights by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	body {
-		-ms-behavior: url("assets/js/backgroundsize.min.htc");
+	body, html {
+		height: 100%;
 	}
 
-/* Type */
-
-	h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-		border-bottom: solid 2px #ffffff;
+	html {
+		background: none;
 	}
 
-	blockquote {
-		border-left: solid 4px #ffffff;
+/* List */
+
+	ul.actions li {
+		padding: 0 0 0 1em;
 	}
 
-	code {
-		border: solid 2px #ffffff;
+		ul.actions li:first-child {
+			padding-left: 0;
+		}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: solid 2px #dddddd;
+		position: relative;
 	}
 
-	hr {
-		border-bottom: solid 2px #ffffff;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		line-height: 3em;
 	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		font-size: 3em;
+	}
+
+		input[type="checkbox"] + label:before,
+		input[type="radio"] + label:before {
+			display: none;
+		}
 
 /* Button */
 
@@ -35,129 +58,90 @@
 	input[type="button"],
 	button,
 	.button {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-		border: solid 2px #ffffff;
+		border: solid 2px #dddddd;
 	}
 
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-			border: 0;
+/* Main BG */
+
+	.main-bg {
+		z-index: 0;
+	}
+
+/* Main */
+
+	.main {
+		background-size: cover;
+	}
+
+		.main .container {
+			background: #fff;
+			border-top: solid 1px #dddddd;
+			position: relative;
+			z-index: 1;
 		}
 
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-		background: transparent;
-		border: solid 2px #ffffff;
-	}
-
-/* Table */
-
-	table tbody tr {
-		border: solid 1px #ffffff;
-		border-left: 0;
-		border-right: 0;
-	}
-
-	table.alt tbody tr td {
-		border: solid 1px #ffffff;
-		border-left-width: 0;
-		border-top-width: 0;
-	}
-
-		table.alt tbody tr td:first-child {
-			border-left-width: 1px;
+		.main .goto-next {
+			text-decoration: none;
 		}
 
-	table.alt tbody tr:first-child td {
-		border-top-width: 1px;
-	}
+			.main .goto-next:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
 
-	table.alt thead {
-		border-bottom: 0;
-	}
-
-	table.alt tfoot {
-		border-top: 0;
-	}
-
-/* Features */
-
-	.features article {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-		position: relative;
-		width: 44%;
-	}
-
-		.features article .image {
-			margin-top: 0;
-			margin-left: 0;
-			width: 100%;
-		}
-
-/* Menu */
-
-	#menu {
-		background: #2e3141;
-	}
-
-		#menu h2 {
-			border-bottom: solid 2px #ffffff;
-		}
+			.main .goto-next:before {
+				color: #dddddd;
+				content: '\f063';
+				display: block;
+				font-size: 2em;
+				height: 2em;
+				left: 0;
+				line-height: 2em;
+				position: absolute;
+				text-align: center;
+				text-indent: 0;
+				top: 0;
+				width: 2em;
+			}
 
 /* Header */
 
 	#header {
-		background-color: #353849;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		background-image: url("../../images/bg.jpg");
+		background-size: cover;
+		height: 100%;
 	}
 
-/* Wrapper */
-
-	.wrapper {
-		margin: 0;
-	}
-
-		.wrapper:before, .wrapper:after {
-			display: none;
+		#header:after {
+			min-height: 100%;
 		}
 
-		.wrapper.spotlight .image {
-			-ms-behavior: url("assets/js/ie/PIE.htc");
+		#header header {
+			position: relative;
+			z-index: 1;
 		}
 
-			.wrapper.spotlight .image img {
-				position: relative;
-				-ms-behavior: url("assets/js/ie/PIE.htc");
-			}
-
-/* Banner */
-
-	#banner .logo .icon {
-		border: solid 2px #ffffff;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-	}
-
-	#banner h2 {
-		border-bottom: solid 2px #ffffff;
-	}
+		#header .container {
+			background: #fff;
+			z-index: 1;
+		}
 
 /* Footer */
 
-	#footer .inner .copyright {
-		border-top: solid 2px #ffffff;
+	#footer {
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		background-image: url("../../images/bg.jpg");
+		background-size: cover;
 	}
 
-		#footer .inner .copyright li {
-			border-left: solid 2px #ffffff;
+		#footer .container {
+			background: #fff;
+			border-top: solid 1px #dddddd;
+			position: relative;
+			z-index: 1;
 		}
