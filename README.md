@@ -1,4 +1,4 @@
-# justinhchan.github.io
+# [justinhchan.github.io](https://justinhchan.github.io)
 A personal website using GitHub Pages. 
 
 ## Credits:
