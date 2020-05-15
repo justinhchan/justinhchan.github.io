@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Justin Chan website",
   "main": "index.js",
+  "homepage": "https://justinhchan.github.io/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "author": "Justin Chan",
   "license": "ISC",
@@ -17,10 +20,11 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^1.0.1",
+    "gh-pages": "^2.2.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
