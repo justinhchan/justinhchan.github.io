@@ -1,14 +1,14 @@
 {
   "name": "justinhchan.github.io",
   "version": "1.0.0",
-  "description": "Justin Chan website",
+  "description": "Justin Chan Website",
   "main": "index.js",
   "homepage": "https://justinhchan.github.io/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "predeploy": "yarn run build && cp -r public/images dist",
+    "predeploy": "yarn run build && cp -r public/images dist && cp CNAME dist",
     "deploy": "gh-pages -b master -d dist"
   },
   "author": "Justin Chan",
