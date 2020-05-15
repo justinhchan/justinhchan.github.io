@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "predeploy": "yarn run build && cp -r public/images dist",
+    "deploy": "gh-pages -b master -d dist"
   },
   "author": "Justin Chan",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^1.0.1",
     "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^4.3.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
